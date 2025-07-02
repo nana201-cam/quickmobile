@@ -1,0 +1,383 @@
+   <!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PC & mac </title>
+  <style>
+     .image-row {
+      background-color: #f2f2f2;
+      color: #333;
+      cursor: pointer;
+      padding: 60px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 60px;
+      transition: 0.9s;
+      margin-bottom: 5px;
+    }
+
+    .image-row :hover {
+      background-color: #ddd;
+    }
+    /* Reset global */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+    p {
+      font-weight: 300;
+      color: #111;
+      margin-bottom: 10px;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 20px;
+      width: 100%;
+      z-index: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: 0.5s;
+      background: transparent;
+    }
+    .logo {
+      color: #000;
+      font-weight: bold;
+      font-size: 2em;
+      text-decoration: none;
+    }
+    .logo span {
+      color: #ffff00;
+    }
+    .navbar {
+      display: flex;
+      position: relative;
+      list-style: none;
+      align-items: center;
+    }
+    .navbar li {
+      list-style: none;
+    }
+    .navbar a {
+      color: #000;
+      text-decoration: none;
+      margin-left: 30px;
+      font-weight: 700;
+    }
+    .btn-reservation {
+      padding: 10px 20px;
+      background: #ffff00;
+      margin-top: -10px;
+      text-transform: uppercase;
+      cursor: pointer;
+      border: none;
+      font-weight: 700;
+    }
+    .btn-reservation:hover {
+      background: #d87710;
+      transition: background 0.3s ease-out;
+    }
+    .banniere {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .banniere .contenu {
+      max-width: 70%;
+      text-align: center;
+    }
+    .banniere .contenu h2 {
+      color: #000;
+      font-size: 3em;
+      text-transform: capitalize;
+    }
+    .banniere .contenu p:nth-child(3) {
+      color: #000;
+      font-size: 1.2em;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 40px;
+      max-width: 1080px;
+      margin: auto;
+      background: #f9f9f9;
+      color: #333;
+      padding-top: 120px; /* pour laisser place au header fixe */
+    }
+    h1, h2 {
+      color: #2b2b2b;
+    }
+    h1 {
+      font-size: 2.4em;
+      margin-bottom: 30px;
+    }
+    h2 {
+      font-size: 1.5em;
+      margin-top: 30px;
+    }
+   .image-row {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr); /* ✅ 2 colonnes */
+  gap: 20px;
+  padding: 60px;
+}
+
+.image-row img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}  
+.offre-etudiante {
+  color: #000000;
+	font-size: 1.2em;
+  position: absolute;
+  top: 60px;         /* ajuste la descente */
+  right: 40px;       /* rapproche du bord droit */
+  background: #ffecb3;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   } 
+   .offre-etudiante {
+  color: #000000;
+	font-size: 1.2em;
+  position: absolute;
+  top: 60px;         /* ajuste la descente */
+  right: 40px;       /* rapproche du bord droit */
+  background: #ffecb3;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   } 
+ .footer {
+  background-color: #1f2326;
+  color: white;
+  padding: 60px 40px;
+  font-family: sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px; 
+}
+
+.footer-column h3 {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.footer-column p,
+.footer-column ul,
+.footer-column a {
+  color: #ccc;
+  font-size: 0.95em;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.social-icons a {
+  color: white;
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 30px;
+  padding-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+.payment-icons img {
+  height: 60px;
+  margin-left: 0px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}  
+.btn1 {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #007bff; /* Bleu vif */
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.btn1:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+header.sticky {
+      background: #fff;
+      padding: 10px 10px;
+      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    }
+    header.sticky .logo {
+      color: #000;
+    }
+    header.sticky .navbar li a {
+      color: #000;
+    }
+    header.sticky .navbar li a:hover {
+      color: #ffff00;
+      border-bottom: 2px solid #ffff00;
+    } 
+
+  </style>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo"><span>MYFIX</span></a>
+    <div class="boutiqueMenu" onclick="boutiqueMenu();"></div>
+    <ul class="navbar">
+      <li><a href="#banniere" onclick="boutiqueMenu();">Accueil</a></li>
+      <li><a href="#apropos" onclick="boutiqueMenu();">À propos</a></li>
+      <li><a href="#services" onclick="boutiqueMenu();">Nos Services</a></li>
+      <li><a href="#" onclick="boutiqueMenu();">Devis</a></li>
+      <li><a href="#contact" onclick="boutiqueMenu();">Contact</a></li>
+      <li><a href="#" onclick="boutiqueMenu();">Tarifs</a></li>
+      <li><a href="#" class="btn-reservation" onclick="boutiqueMenu();">RÉSERVEZ</a></li>
+    </ul>
+  </header>
+  <section class="banniere">
+  <div class="contenu">
+    <h2>Ordinateurs disponibles à la réparation</h2>
+  </div>
+<section id="services" class="services">
+  <div class="image-row ">
+    <img src="image/image1.png"alt="sony">
+    <img src="image/image2.png"alt=""  >
+    <img src="image/image3.png"alt="">
+    <img src="image/image4.png"alt="">
+    <img src="image/image5.png"alt="">
+    <img src="image/image6.png"alt="">
+  </div>
+  <div class="titre"> 
+        <a href="suit2.html" class="btn1">Voir Plus</a>
+        </div>
+  </section>
+  </section>
+  <footer class="footer">
+  <div class="footer-container">
+    <!-- Colonne 1 -->
+    <div class="footer-column">
+      <h3>COORDONNÉES</h3>
+      <p><strong>ADRESSE</strong><br> 5 rue du Priez - 59000 - Lille</p>
+      <p><strong>TÉLÉPHONE</strong><br>03 62 92 02 67 (Appel non surtaxé)</p>
+      <p><strong>E-MAIL</strong><br>phoneserviceva@gmail.com</p>
+      <p><strong>HORAIRES</strong><br>Ouverture sans-interruption:<br>Lun - Dim / 10h00 - 19h00</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <!-- Colonne 2 -->
+    <div class="footer-column">
+      <h3>INFORMATIONS</h3>
+      <ul>
+        <li><a><a href="Mention légales.html">Mentions légales</a></li>
+        <li><a href="RGPD.html">RGPD - Données personnelles</a></li>
+        <li><a href="Cookies.html ">Cookies</a></li>
+        <!--
+        <li><a href="#">Qui sommes-nous ?</a></li>
+        <li><a href="#">Contact</a></li>
+      -->
+      </ul>
+    </div>
+
+    <!-- Colonne 3 -->
+    <div class="footer-column">
+      <h3>Boutiques</h3>
+      <p><strong>ADRESSE</strong><br> 5 rue du Priez - 59000 - Lille </p>
+      <p><strong>ADRESSE</strong><br> 24 rue des Sarrazins - 59000 - Lille </p>
+      <a href="#" class="more-link">EN SAVOIR PLUS &nbsp; ›</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© MYFIX Lille 2021. Reproduction interdite.</p>
+    <div class="payment-icons">
+      <img src="image/Carte1.png" alt="Visa">
+      <img src="image/Carte2.png" alt="PayPal">
+      <img src="image/Carte3.png" alt="Stripe">
+      <img src="image/Carte4.png" alt="MasterCard">
+      <img src="image/Carte5.png" alt="Appme Pay">
+      
+    </div>
+  </div>
+</footer>
+<div class="offre-etudiante">
+  OFFRE ÉTUDIANTE SPÉCIALE ! -10% sur toutes les réparations de téléphone avec carte étudiante
+</div>
+<script>
+    window.addEventListener('scroll', function(){
+        const header=document.querySelector('header');
+        header.classList.toggle("sticky",window.scrollY>0);
+    });
+    function boutiqueMenu(){
+        const boutiqueMenu = document.querySelector('boutiqueMenu');
+        const navbar = document.querySelector('.navbar');
+        boutiqueMenu.classList.boutique('active');
+        navbar.classList.boutique('active');
+    }
+</script>
+
+</body>
+</html>

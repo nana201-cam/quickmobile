@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mention légales - MYFIX Lille</title>
+  <style>
+    /* Reset global */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+    p {
+      font-weight: 300;
+      color: #111;
+      margin-bottom: 10px;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 20px;
+      width: 100%;
+      z-index: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: 0.5s;
+      background: transparent;
+    }
+    .logo {
+      color: #000;
+      font-weight: bold;
+      font-size: 2em;
+      text-decoration: none;
+    }
+    .logo span {
+      color: #000;
+    }
+    .navbar {
+      display: flex;
+      position: relative;
+      list-style: none;
+      align-items: center;
+    }
+    .navbar li {
+      list-style: none;
+    }
+    .navbar a {
+      color: #000;
+      text-decoration: none;
+      margin-left: 30px;
+      font-weight: 700;
+    }
+    .btn-reservation {
+      padding: 10px 20px;
+      background: #ffff00;
+      margin-top: -10px;
+      text-transform: uppercase;
+      cursor: pointer;
+      border: none;
+      font-weight: 700;
+    }
+    .btn-reservation:hover {
+      background: #d87710;
+      transition: background 0.3s ease-out;
+    }
+    .banniere {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .banniere .contenu {
+      max-width: 70%;
+      text-align: center;
+    }
+    .banniere .contenu h2 {
+      color: #000;
+      font-size: 3em;
+      text-transform: capitalize;
+    }
+    .banniere .contenu p:nth-child(3) {
+      color: #000;
+      font-size: 1.2em;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 40px;
+      max-width: 1080px;
+      margin: auto;
+      background: #f9f9f9;
+      color: #333;
+      padding-top: 120px; /* pour laisser place au header fixe */
+    }
+    h1, h2 {
+      color: #2b2b2b;
+    }
+    h1 {
+      font-size: 2.4em;
+      margin-bottom: 30px;
+    }
+    h2 {
+      font-size: 1.5em;
+      margin-top: 30px;
+    }
+    header.sticky {
+      background: #fff;
+      padding: 10px 10px;
+      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    }
+    header.sticky .logo {
+      color: #000;
+    }
+    header.sticky .navbar li a {
+      color: #000;
+    }
+    header.sticky .navbar li a:hover {
+      color: #ffff00;
+      border-bottom: 2px solid #ffff00;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo"><span>MYFIX</span></a>
+    <div class="boutiqueMenu" onclick="boutiqueMenu();"></div>
+    <ul class="navbar">
+      <li><a href="#banniere" onclick="boutiqueMenu();">Accueil</a></li>
+      <li><a href="#apropos" onclick="boutiqueMenu();">À propos</a></li>
+      <li><a href="#services" onclick="boutiqueMenu();">Nos Services</a></li>
+      <li><a href="#" onclick="boutiqueMenu();">Devis</a></li>
+      <li><a href="#contact" onclick="boutiqueMenu();">Contact</a></li>
+      <li><a href="#" onclick="boutiqueMenu();">Tarifs</a></li>
+      <li><a href="#" class="btn-reservation" onclick="boutiqueMenu();">RÉSERVEZ</a></li>
+    </ul>
+  </header>
+<h1>Gestion des cookies – MYFIX QUICK MOBILE FIX</h1>
+<P>Lors de votre navigation sur notre site https://myfix.fr, des cookies peuvent être déposés sur votre navigateur, uniquement pour garantir le bon fonctionnement du site et mesurer de manière anonyme l’audience.
+
+Chaque navigateur web propose des réglages spécifiques pour gérer les cookies. La configuration de ces paramètres dépend du logiciel que vous utilisez pour naviguer sur Internet.
+
+Nous vous invitons à consulter le menu d’aide de votre navigateur pour savoir comment modifier vos préférences en matière de cookies.
+
+Voici quelques liens directs vers les instructions de gestion des cookies pour les navigateurs les plus courants :
+
+Pour Firefox
+
+Pour Google Chrome
+
+Pour Internet Explorer
+
+Pour Safari
+
+Pour Opera
+
+</p>
+<p>Pour plus d’informations sur les cookies, nous vous invitons à consulter le site de la CNIL : 
+<a href="https://www.cnil.fr/fr/cookies-les-outils-pour-les-maitriser" target="_blank" rel="noopener noreferrer">
+https://www.cnil.fr/fr/cookies-les-outils-pour-les-maitriser
+</a>
+</p>
+</body>
+</html>
