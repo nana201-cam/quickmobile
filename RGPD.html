@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mention légales - MYFIX Lille</title>
+  <style>
+    /* Reset global */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+    p {
+      font-weight: 300;
+      color: #111;
+      margin-bottom: 10px;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 20px;
+      width: 100%;
+      z-index: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: 0.5s;
+      background: transparent;
+    }
+    .logo {
+      color: #000;
+      font-weight: bold;
+      font-size: 2em;
+      text-decoration: none;
+    }
+    .logo span {
+      color: #000;
+    }
+    .navbar {
+      display: flex;
+      position: relative;
+      list-style: none;
+      align-items: center;
+    }
+    .navbar li {
+      list-style: none;
+    }
+    .navbar a {
+      color: #000;
+      text-decoration: none;
+      margin-left: 30px;
+      font-weight: 700;
+    }
+    .btn-reservation {
+      padding: 10px 20px;
+      background: #ffff00;
+      margin-top: -10px;
+      text-transform: uppercase;
+      cursor: pointer;
+      border: none;
+      font-weight: 700;
+    }
+    .btn-reservation:hover {
+      background: #d87710;
+      transition: background 0.3s ease-out;
+    }
+    .banniere {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .banniere .contenu {
+      max-width: 70%;
+      text-align: center;
+    }
+    .banniere .contenu h2 {
+      color: #000;
+      font-size: 3em;
+      text-transform: capitalize;
+    }
+    .banniere .contenu p:nth-child(3) {
+      color: #000;
+      font-size: 1.2em;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 40px;
+      max-width: 1080px;
+      margin: auto;
+      background: #f9f9f9;
+      color: #333;
+      padding-top: 120px; /* pour laisser place au header fixe */
+    }
+    h1, h2 {
+      color: #2b2b2b;
+    }
+    h1 {
+      font-size: 2.4em;
+      margin-bottom: 30px;
+    }
+    h2 {
+      font-size: 1.5em;
+      margin-top: 30px;
+    }
+    header.sticky {
+      background: #fff;
+      padding: 10px 10px;
+      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    }
+    header.sticky .logo {
+      color: #000;
+    }
+    header.sticky .navbar li a {
+      color: #000;
+    }
+    header.sticky .navbar li a:hover {
+      color: #ffff00;
+      border-bottom: 2px solid #ffff00;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo"><span>MYFIX</span></a>
+    <div class="boutiqueMenu" onclick="boutiqueMenu();"></div>
+    <ul class="navbar">
+      <li><a href="#banniere" onclick="boutiqueMenu();">Accueil</a></li>
+      <li><a href="#apropos" onclick="boutiqueMenu();">À propos</a></li>
+      <li><a href="#services" onclick="boutiqueMenu();">Nos Services</a></li>
+      <li><a href="#" onclick="boutiqueMenu();">Devis</a></li>
+      <li><a href="#contact" onclick="boutiqueMenu();">Contact</a></li>
+      <li><a href="#" onclick="boutiqueMenu();">Tarifs</a></li>
+      <li><a href="#" class="btn-reservation" onclick="boutiqueMenu();">RÉSERVEZ</a></li>
+    </ul>
+  </header>
+
+  <h1>RGPD - Traitement des données personnelles du site cornermobile.fr</h1>
+<P>Conformément au règlement européen 2016/679 du 27 avril 2016 (dit « règlement général sur la protection des données » ou RGPD)</P>
+   <P> la présente charte de protection des données à caractère personnel (ci-après : la « Charte »)
+   décrit les engagements du site MYFIX QUICK MOBILE FIX – [adresse de l’établissement, SIREN/SIRET, numéro de TVA] – en tant que responsable du traitement.</p>
+   <h2>1. Qui est responsable du traitement des données ?</h2>
+   <P>Le site myfix.fr (ou toute autre URL officielle de votre entreprise) est édité par MYFIX QUICK MOBILE FIX, dont le responsable de traitement est [Nom du dirigeant].
+Adresse : [5 rue Priez 59000 LILLE]
+Email de contact pour les questions RGPD : [phoneserviva@gmail.com]</p>
+<h2>2. Quelles données collectons-nous ?</h2>
+<p>En fonction de votre interaction avec notre entreprise (navigation sur le site, demande via formulaire, appel téléphonique, etc.), nous pouvons collecter les données suivantes :
+
+Identité : nom, prénom, adresse postale, numéro de téléphone, adresse e-mail
+
+Données de contact : messages envoyés via notre formulaire, e-mails, etc.
+
+Données de navigation : adresse IP, données de fréquentation du site
+
+Données techniques relatives à votre appareil (modèle, panne, type d’appareil) dans le cadre des demandes de réparation
+
+Nous ne collectons aucune donnée sensible ni de données sans votre consentement.</p>
+ <h2>3. Comment collectons-nous vos données ?</h2>
+ <p>Vos données peuvent être collectées de façon :
+
+Directe : via le formulaire de contact, téléphone, email, ou en boutique
+
+Indirecte : par votre navigation sur notre site (adresse IP, logs de connexion)
+
+Nous n’utilisons aucun cookie publicitaire ou traceur tiers. Les seuls cookies utilisés sont ceux de mesure d’audience ou de fonctionnement.</p>
+<h2>4. Pourquoi vos données sont-elles collectées ?</h2>
+<P>Vos données sont traitées pour les finalités suivantes :
+
+Répondre à vos demandes via le formulaire de contact
+
+Gérer vos réparations, demandes de devis, ou prise de rendez-vous
+
+Respecter nos obligations légales et comptables
+
+Prévenir les fraudes ou abus</p>
+<h2>5. Qui accède à vos données ?</h2>
+<p>Les données sont exclusivement traitées en interne par MYFIX QUICK MOBILE FIX.
+Elles peuvent être partagées avec :
+
+Nos prestataires techniques (hébergement, emailing) agissant en tant que sous-traitants
+
+Les autorités administratives ou judiciaires, sur requête légale
+
+Nous ne vendons ni ne louons vos données personnelles.</p>
+<h2>6. Durée de conservation</h2>
+<p>Les durées de conservation sont les suivantes :
+
+Données de contact : 1 an après le dernier contact
+
+Données liées à une prestation : 10 ans pour les obligations comptables
+
+Données de navigation anonymes : 6 mois (mesure d’audience)</p>
+<h2>7. Sécurité des données</h2>
+<p>Les données sont hébergées sur des serveurs sécurisés situés en Europe, protégés par pare-feu et accès restreint.
+Nous appliquons des mesures techniques et organisationnelles strictes pour protéger vos données contre l’accès non autorisé, la perte ou la divulgation.</p>
+<h2>8. Vos droits</h2>
+<P>Conformément à la réglementation, vous disposez des droits suivants :
+
+Accès à vos données
+
+Rectification de vos données
+
+Effacement de vos données (sous réserve des obligations légales)
+
+Limitation du traitement
+
+Opposition au traitement
+
+Portabilité de vos données (dans certains cas)
+
+Retrait du consentement à tout moment</p>
+<h2>9. Hébergement des données</h2>
+<p>Le site est hébergé par :
+[Nom de l’hébergeur] – [Adresse] – [Pays]
+Les données sont stockées exclusivement sur des serveurs situés dans l’Union européenne.</p>
+<h2>10. Mise à jour de la politique</h2>
+<p>La présente politique peut être modifiée à tout moment pour respecter les évolutions législatives, réglementaires ou techniques.
+ Les utilisateurs seront informés en cas de modification substantielle.</p>
+  <script>
+    window.addEventListener('scroll', function () {
+      const header = document.querySelector('header');
+      header.classList.toggle('sticky', window.scrollY > 0);
+    });
+
+    function boutiqueMenu() {
+      // Fonction à définir selon ton besoin
+      console.log('Menu toggled');
+    }
+  </script>
+</body>
+</html>

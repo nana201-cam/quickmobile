@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services & Réparations</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .main-container {
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+      gap: 80px;
+      flex-wrap: wrap;
+    }
+
+    .left-services, .right-repairs {
+      flex: 1;
+      min-width: 300px;
+    } 
+    .services-section {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  flex-wrap: wrap; /* pour que ça s'adapte aux petits écrans */
+}
+
+.service-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.service-item h3 {
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.service-item p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/*
+    .service-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 50px;
+      gap: 20px;
+    justify-content: flex-start;
+    padding: 10px 40px;
+  padding-bottom: 100px;
+    }
+
+    .service-item img {
+      width: 10%;
+      margin-right: 15px;
+      height: auto;
+    }
+*/
+    .repair-item {
+      border-bottom: 1px solid #ddd;
+      padding: 20px 0;
+    }
+
+    .repair-item:last-child {
+      border-bottom: none;
+    }
+
+    .repair-title {
+      font-weight: bold;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .repair-desc {
+      color: #666;
+      font-size: 14px;
+      margin-left: 16px;
+     
+    }
+
+    .cta-button {
+      display: block;
+      margin-top: 40px;
+      padding: 15px 30px;
+      background: linear-gradient(90deg, #0046ff, #1e90ff);
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 30px;
+      text-decoration: none;
+      width: fit-content;
+    } 
+     header.sticky {
+      background: #fff;
+      padding: 10px 10px;
+      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    }
+    header.sticky .logo {
+      color: #000;
+    }
+    header.sticky .navbar li a {
+      color: #000;
+    }
+    header.sticky .navbar li a:hover {
+      color: #ffff00;
+      border-bottom: 2px solid #ffff00;
+    } 
+  </style>
+</head>
+<script>
+    window.addEventListener('scroll', function(){
+        const header=document.querySelector('header');
+        header.classList.toggle("sticky",window.scrollY>0);
+    });
+    function boutiqueMenu(){
+        const boutiqueMenu = document.querySelector('boutiqueMenu');
+        const navbar = document.querySelector('.navbar');
+        boutiqueMenu.classList.boutique('active');
+        navbar.classList.boutique('active');
+    }
+</script>
+<body>
+<section class="services-section">
+  <div class="service-item">
+    <img src="image/logo1.png" alt="30 minutes" />
+    <h3>REPARATION EXPRESS</h3>
+    <p>Réparation rapide pour assurer que vous ne perdiez aucun temps.</p>
+  </div>
+
+  <div class="service-item">
+    <img src="image/logo2.png" alt="Remise 10€" />
+    <h3>REMISE IMMIDIATE<br>10€</h3>
+    <p>Prenez rendez vous et obtenez 10€ de remise sur votre réparation dès 69€.</p>
+  </div>
+
+  <div class="service-item">
+    <img src="image/logo3.png" alt="Données conservées" />
+    <h3>SANS PERDRE VOS DONNÉES</h3>
+    <p>Nous redonnons vie à votre appareil sans toucher à vos données.</p>
+  </div>
+</section>
+ </html>
+<div class="main-container">
+  <!-- Colonne gauche : Services -->
+  <div class="left-services">
+    <div class="service-item">
+      <img src="image/CP1.png" alt="">
+      <span>Sauvegarde des données</span>
+    </div>
+    <div class="service-item">
+      <img src="image/CP2.png" alt="">
+      <span>Transfert de données</span>
+    </div>
+    <div class="service-item">
+      <img src="image/CP3.png" alt="">
+      <span>Réinitialisation et déblocage</span>
+    </div>
+    <div class="service-item">
+      <img src="image/CP4.png" alt="">
+      <span>Nettoyage connecteur de charge</span>
+    </div>
+  </div>
+
+  <!-- Colonne droite : Réparations -->
+  <div class="right-repairs">
+    <div class="repair-item">
+      <div class="repair-title">
+        <img src="image/P4.png" alt="" width="30">
+        Remplacement connecteur de charge
+      </div>
+      <div class="repair-desc">
+        Qualité: Standard – Garantie: 1 ans – Durée de la réparation: 30 min
+      </div>
+    </div>
+
+    <div class="repair-item">
+      <div class="repair-title">
+        <img src="image/P3.png" alt="" width="30">
+        Remplacement camera arrière
+      </div>
+      <div class="repair-desc">
+        Qualité: Standard – Garantie: 1 ans – Durée de la réparation: 30 min
+      </div>
+    </div> 
+      
+    <div class="repair-item">
+      <div class="repair-title">
+        <img src="image/P2.png" alt="" width="30">
+        Remplacement Haut Parleur
+      </div>
+      <div class="repair-desc">
+        Qualité: Standard – Garantie: 1 ans – Durée de la réparation: 30 min
+      </div>
+    </div>
+
+    <div class="repair-item">
+      <div class="repair-title">
+        <img src="image/P1.png" alt="" width="30">
+        Remplacement Vitre Caméra
+      </div>
+      <div class="repair-desc">
+        Qualité: Standard – Garantie: 1 ans – Durée de la réparation: 30 min
+      </div>
+    </div>
+
+    <div class="repair-item">
+      <div class="repair-title">
+        <img src="image/P6.png" alt="" width="30">
+        Remplacement Vitre Arrière
+      </div>
+      <div class="repair-desc">
+        Qualité: Standard – Garantie: 1 ans – Durée de la réparation: 30 min
+      </div>
+    </div>
+
+    <div class="repair-item">
+      <div class="repair-title">
+        <img src="image/P5.png" alt="" width="30">
+        Remplacement de batterie
+      </div>
+      <div class="repair-desc">
+        Qualité: Standard – Garantie: 1 ans – Durée de la réparation: 30 min
+      </div>
+    </div>
+    
+
+
+    <a href="#reservation" class="cta-button">RÉSERVER VOTRE RÉPARATION</a>
+  </div>
+</div>
+<style>
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 40px;
+}
+.product-card {
+  width: 250px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: sans-serif;
+}
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+  position: relative;
+}
+.badge-promo {
+  background: black;
+  color: white;
+  padding: 5px 10px;
+  font-size: 13px;
+  border-radius: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.product-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+.product-price {
+  font-size: 15px;
+}
+.product-price del {
+  color: #999;
+}
+.cta-button {
+  margin-top: 10px;
+  background: #0039ff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+}
+</style>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<title>Types de Tablettes par Marque</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f5f5f5;
+  }
+  section {
+    background: white;
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  ul {
+    list-style: disc inside;
+    margin-bottom: 10px;
+  }
+  img {
+    max-width: 180px;
+    height: auto;
+    margin: 8px 10px 8px 0;
+    vertical-align: middle;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  }
+</style>
+</head>
+<body>
+
+<section>
+  <h2>Sony</h2>
+  <ul>
+    <li>Xperia Tablet Z Series</li>
+    <li>Xperia Touch (tablette/projecteur tactile)</li>
+  </ul>
+  <img src="image/B1.png"Sony Xperia Tablet Z" />
+  <img src="image/B2.png" alt="Sony Xperia Touch" />
+</section>
+
+<section>
+  <h2>Samsung</h2>
+  <ul>
+    <li>Galaxy Tab S Series (haut de gamme)</li>
+    <li>Galaxy Tab A Series (entrée/milieu de gamme)</li>
+    <li>Galaxy Tab Active Series (tablettes durcies)</li>
+    <li>Galaxy Book Series (2-en-1 Windows)</li>
+  </ul>
+  <img src="image/B3.png" alt="Samsung Galaxy Tab S7" />
+  <img src="image/B4.png" alt="Samsung Galaxy Tab A" />
+</section>
+
+<section>
+  <h2>Huawei</h2>
+  <ul>
+    <li>MatePad Series (haut de gamme)</li>
+    <li>MediaPad Series (entrée/milieu de gamme)</li>
+    <li>MatePad Pro (premium)</li>
+  </ul>
+  <img src="image/B5.png" alt="Huawei MatePad Pro" />
+</section>
+
+<section>
+  <h2>Nokia</h2>
+  <ul>
+    <li>Nokia N1 (seule tablette Android sortie)</li>
+  </ul>
+  <img src="image/B6.png" alt="Nokia N1" />
+</section>
+
+<section>
+  <h2>Apple</h2>
+  <ul>
+    <li>iPad (modèle de base)</li>
+    <li>iPad Air</li>
+    <li>iPad Mini</li>
+    <li>iPad Pro (haut de gamme)</li>
+  </ul>
+  <img src="image/B7.png" alt="Apple iPad Pro" />
+  <img src="image/B8.png" alt="Apple iPad Mini" />
+</section>
+
+<section>
+  <h2>Microsoft</h2>
+  <ul>
+    <li>Surface Pro Series (2-en-1 Windows)</li>
+    <li>Surface Go Series (plus compactes)</li>
+    <li>Surface Book (hybride PC portable/tablette)</li>
+  </ul>
+  <img src="image/B9.png" alt="Microsoft Surface Pro 7" />
+  <img src="image/B10.png" alt="Microsoft Surface Book" />
+</section>
+<a href="exmple.html">
+</a>
+</body>
+</html>

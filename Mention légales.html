@@ -1,0 +1,274 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mention légales - MYFIX Lille</title>
+  <style>
+    /* Reset global */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+    p {
+      font-weight: 300;
+      color: #111;
+      margin-bottom: 10px;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 20px;
+      width: 100%;
+      z-index: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: 0.5s;
+      background: transparent;
+    }
+    .logo {
+      color: #000;
+      font-weight: bold;
+      font-size: 2em;
+      text-decoration: none;
+    }
+    .logo span {
+      color: #000;
+    }
+    .navbar {
+      display: flex;
+      position: relative;
+      list-style: none;
+      align-items: center;
+    }
+    .navbar li {
+      list-style: none;
+    }
+    .navbar a {
+      color: #000;
+      text-decoration: none;
+      margin-left: 30px;
+      font-weight: 700;
+    }
+    .btn-reservation {
+      padding: 10px 20px;
+      background: #ffff00;
+      margin-top: -10px;
+      text-transform: uppercase;
+      cursor: pointer;
+      border: none;
+      font-weight: 700;
+    }
+    .btn-reservation:hover {
+      background: #d87710;
+      transition: background 0.3s ease-out;
+    }
+    .banniere {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .banniere .contenu {
+      max-width: 70%;
+      text-align: center;
+    }
+    .banniere .contenu h2 {
+      color: #000;
+      font-size: 3em;
+      text-transform: capitalize;
+    }
+    .banniere .contenu p:nth-child(3) {
+      color: #000;
+      font-size: 1.2em;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 40px;
+      max-width: 1080px;
+      margin: auto;
+      background: #f9f9f9;
+      color: #333;
+      padding-top: 120px; /* pour laisser place au header fixe */
+    }
+    h1, h2 {
+      color: #2b2b2b;
+    }
+    h1 {
+      font-size: 2.4em;
+      margin-bottom: 30px;
+    }
+    h2 {
+      font-size: 1.5em;
+      margin-top: 30px;
+    }
+    header.sticky {
+      background: #fff;
+      padding: 10px 10px;
+      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    }
+    header.sticky .logo {
+      color: #000;
+    }
+    header.sticky .navbar li a {
+      color: #000;
+    }
+    header.sticky .navbar li a:hover {
+      color: #ffff00;
+      border-bottom: 2px solid #ffff00;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo"><span>MYFIX</span></a>
+    <div class="boutiqueMenu" onclick="boutiqueMenu();"></div>
+    <ul class="navbar">
+      <li><a href="#banniere" onclick="boutiqueMenu();">Accueil</a></li>
+      <li><a href="#apropos" onclick="boutiqueMenu();">À propos</a></li>
+      <li><a href="#services" onclick="boutiqueMenu();">Nos Services</a></li>
+      <li><a href="#" onclick="boutiqueMenu();">Devis</a></li>
+      <li><a href="#contact" onclick="boutiqueMenu();">Contact</a></li>
+      <li><a href="#" onclick="boutiqueMenu();">Tarifs</a></li>
+      <li><a href="#" class="btn-reservation" onclick="boutiqueMenu();">RÉSERVEZ</a></li>
+    </ul>
+  </header>
+
+  <h1>Mention légales</h1>
+
+  <h2>Éditeur du site</h2>
+  <p><strong>MYFIX Lille</strong><br />
+    5 rue du Priez, 59000 Lille<br />
+    Téléphone : +33 3 62 92 02 67 <!-- numéro à compléter --></p>
+
+  <h2>Création du site</h2>
+  <p>Ce site a été réalisé par une étudiante <strong>Nana Camara</strong><br />
+    243 rue Alexandra David-Neel<br />
+    SIRET : <!-- à compléter --><br />
+    Téléphone : +33 7 44 56 44 71<br />
+    Email : <a href="mailto:naniscamara16@gmail.com">naniscamara16@gmail.com</a></p>
+
+  <h2>Hébergement</h2>
+  <p>PlanetHoster France<br />
+    Téléphone : <!-- numéro à compléter --></p>
+
+  <h2>Crédits</h2>
+  <p>Illustrations et photos : © MYFIX Lille </p>
+  <p>Contact webmestre : <a href="mailto:phoneserviceva@gmail.com">phoneservicevat@gmail.com</a></p>
+
+  <h2>Données personnelles - vie privée</h2>
+  <p>
+    Conformément à la loi "Informatique et Libertés" du 6 janvier 1978 modifiée, vous bénéficiez d’un droit d’accès et de rectification aux informations qui vous concernent.
+    Si vous souhaitez exercer ce droit et obtenir communication des informations vous concernant, veuillez envoyer un mail à
+    <a href="mailto:phoneserviceva@gmail.com">phoneservicevat@gmail.com</a>.
+  </p>
+
+  <h2>Conditions générales d’utilisation</h2>
+  <p>
+    Corner Mobile Lille a créé le site « MYFIX.fr » afin de délivrer toute information actualisée sur l’entreprise à tout public professionnel ou privé souhaitant en
+    savoir plus sur MYFIX QUICK MOBILE FIX Lille et ses réalisations. L’utilisation du site est soumise au respect des conditions générales d’accès et d’utilisation détaillées
+    ci-dessous et des lois applicables en France à la communication sur le réseau internet.
+  </p>
+
+  <h2>Propriété intellectuelle</h2>
+  <p>
+    La structure générale du site MYFIX.fr ainsi que les textes, graphiques, images, sons et vidéos la composant, sont la propriété de l’éditeur ou de ses
+    partenaires. Toute représentation et/ou reproduction et/ou exploitation partielle ou totale des contenus et services proposés par le site, par quelque procédé
+    que ce soit, sans l’autorisation préalable et par écrit de MYFIX QUICK MOBILE FIX et de ses représentants est strictement interdite et serait susceptible de constituer
+    une contrefaçon au sens des articles L 335-2 et suivants du Code de la propriété intellectuelle.
+    Les noms, dénominations et signes de toute nature (tels que logotypes ou marques figuratives), le nom des produits et services qui sont cités ou reproduits sur les documents publicitaires de toute nature publiés sur
+    ce site par l’entreprise sont la propriété des annonceurs, clients de MYFIX QUICK MOBILE FIX. Il ne peut donc en être fait aucun usage même partiel par les internautes,
+    aucune reproduction, représentation ou imitation, sauf autorisation écrite préalable des propriétaires des marques citées. Toute infraction à cette obligation
+    constitue le délit de contrefaçon exposant son auteur à des poursuites judiciaires.
+    Par ailleurs, le nom « MYFIX QUICK MOBILE FIX », le logotype et la dénomination commerciale de l'entreprise MYFIX QUICK MOBILE FIX sont des marques déposées protégées.
+    Il ne peut donc être fait aucune reproduction même partielle, représentation ou imitation sauf autorisation écrite de MYFIX QUICK MOBILE FIX et de ses représentants.
+    Toute infraction à cette obligation constitue un délit de contrefaçon exposant son auteur à des poursuites judiciaires.
+  </p>
+
+  <h2>Liens hypertextes</h2>
+  <p>
+    Le site myfixquickmobilefix.fr peut contenir des liens hypertextes vers d’autres sites présents sur le réseau Internet. Les liens vers ces autres ressources vous font
+    quitter le site. Il est possible de créer un lien vers la page de présentation de ce site sans autorisation expresse de MYFIX QUICK MOBILE FIX. Aucune autorisation ou
+    demande d’information préalable n’est exigée à l’égard d’un site qui souhaite établir un lien vers le site myfixquickmobilefix.fr. Il convient toutefois d’afficher ce
+    site dans une nouvelle fenêtre du navigateur. Cependant, MYFIX QUICK MOBILE FIX se réserve le droit de demander la suppression d’un lien qu’elle estime non
+    conforme à son objet social ou aux valeurs du site myfixquickmobilefix.fr.
+  </p>
+
+  <h2>Responsabilité</h2>
+  <p>
+    Les informations et/ou documents figurant sur ce site et /ou accessibles par ce site proviennent de sources considérées comme étant fiables. Toutefois, ces
+    informations et/ou documents sont susceptibles de contenir des inexactitudes techniques et des erreurs typographiques. MYFIX QUICK MOBILE FIX se réserve le droit
+    de les corriger, dès que ces erreurs sont portées à sa connaissance. Il est fortement recommandé de vérifier l’exactitude et la pertinence des informations
+    et/ou documents mis à disposition sur ce site. Les informations et/ou documents disponibles sur ce site sont susceptibles d’être modifiés à tout moment, et
+    peuvent avoir fait l’objet de mises à jour. En particulier, ils peuvent avoir fait l’objet d’une mise à jour entre le moment de leur téléchargement et celui où
+    l’utilisateur en prend connaissance. L’utilisation des informations et/ou documents disponibles sur ce site se fait sous l’entière et seule responsabilité
+    de l’utilisateur, qui assume la totalité des conséquences pouvant en découler, sans que MYFIX QUICK MOBILE FIX puisse être recherché à ce titre, et sans recours
+    contre ce dernier. MYFIX QUICK MOBILE FIX ne pourra en aucun cas être tenu responsable de tout dommage de quelque nature qu’il soit résultant de l’interprétation
+    ou de l’utilisation des informations et/ou documents disponibles sur ce site.
+  </p>
+
+  <h2>Accessibilité</h2>
+  <p>
+    L’éditeur s’efforce de permettre l’accès au site 24 heures sur 24, 7 jours sur 7, sauf en cas de force majeure ou d’un événement hors du contrôle de MYFIX QUICK MOBILE FIX,
+    et sous réserve des éventuelles pannes et interventions de maintenance nécessaires au bon fonctionnement du site et des services.
+    Par conséquent, MYFIX QUICK MOBILE FIX ne peut garantir une disponibilité du site et/ou des services, une fiabilité des transmissions et des performances en termes de
+    temps de réponse ou de qualité. Il n’est prévu aucune assistance technique vis-à-vis de l’utilisateur, que ce soit par des moyens électroniques ou téléphoniques.
+    La responsabilité de l’éditeur ne saurait être engagée en cas d’impossibilité d’accès à ce site et/ou d’utilisation des services. Par ailleurs, MYFIX QUICK MOBILE FIX
+    peut être amenée à interrompre le site ou une partie des services, à tout moment et sans préavis, le tout sans droit à indemnité.
+    L’utilisateur reconnaît et accepte que MYFIX QUICK MOBILE FIX ne soit pas responsable des interruptions, ni des conséquences pouvant en découler pour l’utilisateur ou pour tout tiers.
+  </p>
+
+  <h2>Modifications</h2>
+  <p>
+    MYFIX QUICK MOBILE FIX LILLE se réserve la possibilité de modifier, à tout moment et sans préavis, les présentes conditions d’utilisation afin de les adapter aux évolutions
+    du site et/ou de son exploitation.
+  </p>
+
+  <h2>Droit applicable</h2>
+  <p>
+    Tant le présent site que les modalités et conditions de son utilisation sont régis par le droit français, quel que soit le lieu d’utilisation. En cas de contestation
+    éventuelle, et après l’échec de toute tentative de recherche d’une solution amiable, les tribunaux français seront seuls compétents pour connaître de ce litige.
+    Pour toute question relative aux présentes conditions d’utilisation du site, vous pouvez nous écrire à l’adresse suivante MYFIX QUICK MOBILE FIX - 5 rue du Priez 59000 LILLE
+    ou nous contacter à <a href="mailto:phoneserviceva@gmail.com">phoneserviceva@gmail.com</a>.
+  </p>
+
+  <h2>Règles d’usage d’Internet</h2>
+  <p>
+    L’utilisateur déclare accepter les caractéristiques et les limites d’Internet, et notamment reconnaît que :
+    <br /><br />
+    MYFIX QUICK MOBILE FIX n’assume aucune responsabilité sur les services accessibles par Internet et n’exerce aucun contrôle de quelque forme que ce soit sur la
+    nature et les caractéristiques des données qui pourraient transiter par l’intermédiaire de son centre serveur.
+    <br /><br />
+    L’utilisateur reconnaît que les données circulant sur Internet ne sont pas protégées, notamment contre les détournements éventuels. La présence du logo
+    MYFIX QUICK MOBILE FIX institue une présomption simple de validité. La communication de toute information jugée par l’utilisateur de nature sensible ou
+    confidentielle se fait à ses risques et périls.
+    <br /><br />
+    L’utilisateur reconnaît que les données circulant sur Internet peuvent être réglementées en termes d’usage ou être protégées par un droit de propriété.
+    <br /><br />
+    L’utilisateur est seul responsable de l’usage des données qu’il consulte, interroge et transfère sur Internet.
+    <br /><br />
+    L’utilisateur reconnaît que MYFIX QUICK MOBILE FIX ne dispose d’aucun moyen de contrôle sur le contenu des services accessibles sur Internet.
+  </p>
+
+  <script>
+    window.addEventListener('scroll', function () {
+      const header = document.querySelector('header');
+      header.classList.toggle('sticky', window.scrollY > 0);
+    });
+
+    function boutiqueMenu() {
+      // Fonction à définir selon ton besoin
+      console.log('Menu toggled');
+    }
+  </script>
+</body>
+</html>

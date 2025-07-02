@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ecrans cassés</title> 
+  <style>
+ body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .main-container {
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+      gap: 80px;
+      flex-wrap: wrap;
+    }
+
+    .left-services, .right-repairs {
+      flex: 1;
+      min-width: 300px;
+    } 
+    .services-section {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  flex-wrap: wrap; /* pour que ça s'adapte aux petits écrans */
+}
+
+.service-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  max-width: 300px;
+  text-align: center;
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.service-item h3 {
+  font-size: 1.2rem;
+  color: #222;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.service-item p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/*
+    .service-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 50px;
+      gap: 20px;
+    justify-content: flex-start;
+    padding: 10px 40px;
+  padding-bottom: 100px;
+    }
+
+    .service-item img {
+      width: 10%;
+      margin-right: 15px;
+      height: auto;
+    }
+*/
+    .repair-item {
+      border-bottom: 1px solid #ddd;
+      padding: 20px 0;
+    }
+
+    .repair-item:last-child {
+      border-bottom: none;
+    }
+
+    .repair-title {
+      font-weight: bold;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .repair-desc {
+      color: #666;
+      font-size: 14px;
+      margin-left: 16px;
+     
+    }
+
+    .cta-button {
+      display: block;
+      margin-top: 40px;
+      padding: 15px 30px;
+      background: linear-gradient(90deg, #0046ff, #1e90ff);
+      color: white;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 30px;
+      text-decoration: none;
+      width: fit-content;
+    }
+  </style>
+</head>
+<body>
+<section class="services-section">
+  <div class="service-item">
+    <img src="image/logo1.png" alt="30 minutes" />
+    <h3>REPARATION EXPRESS</h3>
+    <p>Réparation rapide pour assurer que vous ne perdiez aucun temps.</p>
+  </div>
+
+  <div class="service-item">
+    <img src="image/logo2.png" alt="Remise 10€" />
+    <h3>REMISE IMMIDIATE<br>10€</h3>
+    <p>Prenez rendez vous et obtenez 10€ de remise sur votre réparation dès 69€.</p>
+  </div>
+
+  <div class="service-item">
+    <img src="image/logo3.png" alt="Données conservées" />
+    <h3>SANS PERDRE VOS DONNÉES</h3>
+    <p>Nous redonnons vie à votre appareil sans toucher à vos données.</p>
+  </div>
+</section>
+ </html>
+<div class="main-container">
+  <!-- Colonne gauche : Services -->
+  <div class="left-services">
+    <div class="service-item">
+      <img src="image/CP1.png" alt="">
+      <span>Sauvegarde des données</span>
+    </div>
+    <div class="service-item">
+      <img src="image/CP2.png" alt="">
+      <span>Transfert de données</span>
+    </div>
+    <div class="service-item">
+      <img src="image/CP3.png" alt="">
+      <span>Réinitialisation et déblocage</span>
+    </div>
+    <div class="service-item">
+      <img src="image/CP4.png" alt="">
+      <span>Nettoyage connecteur de charge</span>
+    </div>
+  </div>
+
+  <!-- Colonne droite : Réparations -->
+  <div class="right-repairs">
+    <div class="repair-item">
+      <div class="repair-title">
+        <img src="image/P4.png" alt="" width="30">
+        Remplacement connecteur de charge
+      </div>
+      <div class="repair-desc">
+        Qualité: Standard – Garantie: 1 ans – Durée de la réparation: 30 min
+      </div>
+    </div>
+
+    <div class="repair-item">
+      <div class="repair-title">
+        <img src="image/P3.png" alt="" width="30">
+        Remplacement camera arrière
+      </div>
+      <div class="repair-desc">
+        Qualité: Standard – Garantie: 1 ans – Durée de la réparation: 30 min
+      </div>
+    </div> 
+      
+    <div class="repair-item">
+      <div class="repair-title">
+        <img src="image/P2.png" alt="" width="30">
+        Remplacement Haut Parleur
+      </div>
+      <div class="repair-desc">
+        Qualité: Standard – Garantie: 1 ans – Durée de la réparation: 30 min
+      </div>
+    </div>
+
+    <div class="repair-item">
+      <div class="repair-title">
+        <img src="image/P1.png" alt="" width="30">
+        Remplacement Vitre Caméra
+      </div>
+      <div class="repair-desc">
+        Qualité: Standard – Garantie: 1 ans – Durée de la réparation: 30 min
+      </div>
+    </div>
+
+    <div class="repair-item">
+      <div class="repair-title">
+        <img src="image/P6.png" alt="" width="30">
+        Remplacement Vitre Arrière
+      </div>
+      <div class="repair-desc">
+        Qualité: Standard – Garantie: 1 ans – Durée de la réparation: 30 min
+      </div>
+    </div>
+
+    <div class="repair-item">
+      <div class="repair-title">
+        <img src="image/P5.png" alt="" width="30">
+        Remplacement de batterie
+      </div>
+      <div class="repair-desc">
+        Qualité: Standard – Garantie: 1 ans – Durée de la réparation: 30 min
+      </div>
+    </div>
+    
+
+  
+  </div>
+</div>
+<style>
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 40px;
+}
+.product-card {
+  width: 250px;
+  border-radius: 10px;
+  text-align: center;
+  font-family: sans-serif;
+}
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+  position: relative;
+}
+.badge-promo {
+  background: black;
+  color: white;
+  padding: 5px 10px;
+  font-size: 13px;
+  border-radius: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.product-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+.product-price {
+  font-size: 15px;
+}
+.product-price del {
+  color: #999;
+}
+.cta-button {
+  margin-top: 10px;
+  background: #0039ff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+} 
+!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Console</title>
+  <style>
+     .image-row {
+      background-color: #f2f2f2;
+      color: #333;
+      cursor: pointer;
+      padding: 60px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 60px;
+      transition: 0.9s;
+      margin-bottom: 5px;
+    }
+
+    .image-row :hover {
+      background-color: #ddd;
+    }
+    /* Reset global */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+    }
+    p {
+      font-weight: 300;
+      color: #111;
+      margin-bottom: 10px;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 20px;
+      width: 100%;
+      z-index: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: 0.5s;
+      background: transparent;
+    }
+    .logo {
+      color: #000;
+      font-weight: bold;
+      font-size: 2em;
+      text-decoration: none;
+    }
+    .logo span {
+      color: #ffff00;
+    }
+    .navbar {
+      display: flex;
+      position: relative;
+      list-style: none;
+      align-items: center;
+    }
+    .navbar li {
+      list-style: none;
+    }
+    .navbar a {
+      color: #000;
+      text-decoration: none;
+      margin-left: 30px;
+      font-weight: 700;
+    }
+    .btn-reservation {
+      padding: 10px 20px;
+      background: #ffff00;
+      margin-top: -10px;
+      text-transform: uppercase;
+      cursor: pointer;
+      border: none;
+      font-weight: 700;
+    }
+    .btn-reservation:hover {
+      background: #d87710;
+      transition: background 0.3s ease-out;
+    }
+    .banniere {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .banniere .contenu {
+      max-width: 70%;
+      text-align: center;
+    }
+    .banniere .contenu h2 {
+      color: #000;
+      font-size: 3em;
+      text-transform: capitalize;
+    }
+    .banniere .contenu p:nth-child(3) {
+      color: #000;
+      font-size: 1.2em;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 40px;
+      max-width: 1080px;
+      margin: auto;
+      background: #f9f9f9;
+      color: #333;
+      padding-top: 120px; /* pour laisser place au header fixe */
+    }
+    h1, h2 {
+      color: #2b2b2b;
+    }
+    h1 {
+      font-size: 2.4em;
+      margin-bottom: 30px;
+    }
+    h2 {
+      font-size: 1.5em;
+      margin-top: 30px;
+    }
+    header.sticky {
+      background: #fff;
+      padding: 10px 10px;
+      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    }
+    header.sticky .logo {
+      color: #000;
+    }
+    header.sticky .navbar li a {
+      color: #000;
+    }
+    header.sticky .navbar li a:hover {
+      color: #ffff00;
+      border-bottom: 2px solid #ffff00;
+    } 
+   .image-row {
+  display: grid;
+  grid-template-columns: repeat(3, 3fr); /* ✅ 2 colonnes */
+  gap: 20px;
+  padding: 60px;
+}
+
+.image-row img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}  
+.offre-etudiante {
+  color: #000000;
+	font-size: 1.2em;
+  position: absolute;
+  top: 60px;         /* ajuste la descente */
+  right: 40px;       /* rapproche du bord droit */
+  background: #ffecb3;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   } 
+   .offre-etudiante {
+  color: #000000;
+	font-size: 1.2em;
+  position: absolute;
+  top: 60px;         /* ajuste la descente */
+  right: 40px;       /* rapproche du bord droit */
+  background: #ffecb3;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   } 
+ .footer {
+  background-color: #1f2326;
+  color: white;
+  padding: 60px 40px;
+  font-family: sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px; 
+}
+
+.footer-column h3 {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.footer-column p,
+.footer-column ul,
+.footer-column a {
+  color: #ccc;
+  font-size: 0.95em;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.social-icons a {
+  color: white;
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 30px;
+  padding-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9em;
+}
+
+.payment-icons img {
+  height: 60px;
+  margin-left: 0px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+} 
+.btn1 {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #007bff; /* Bleu vif */
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.btn1:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+header.sticky {
+      background: #fff;
+      padding: 10px 10px;
+      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+    }
+    header.sticky .logo {
+      color: #000;
+    }
+    header.sticky .navbar li a {
+      color: #000;
+    }
+    header.sticky .navbar li a:hover {
+      color: #ffff00;
+      border-bottom: 2px solid #ffff00;
+    } 
+
+  </style>
+<body>
+  <header>
+    <a href="#" class="logo"><span>MYFIX</span></a>
+    <div class="boutiqueMenu" onclick="boutiqueMenu();"></div>
+    <ul class="navbar">
+      <li><a href="#banniere" onclick="boutiqueMenu();">Accueil</a></li>
+      <li><a href="#apropos" onclick="boutiqueMenu();">À propos</a></li>
+      <li><a href="#services" onclick="boutiqueMenu();">Nos Services</a></li>
+      <li><a href="#" onclick="boutiqueMenu();">Devis</a></li>
+      <li><a href="#contact" onclick="boutiqueMenu();">Contact</a></li>
+      <li><a href="#" onclick="boutiqueMenu();">Tarifs</a></li>
+      <li><a href="#" class="btn-reservation" onclick="boutiqueMenu();">RÉSERVEZ</a></li>
+    </ul>
+  </header>
+
+</footer>
+<div class="offre-etudiante">
+  OFFRE ÉTUDIANTE SPÉCIALE ! -10% sur toutes les réparations de téléphone avec carte étudiante
+</div>
+
+<div class="product-grid">
+  <div class="product-card">
+    <div style="position: relative;">
+      <img src="image/D1.png" alt="Coque iPhone transparent"></div>
+    <div class="product-title">Anti-casse iPhone </div>
+    <div class="product-price"> <strong> 10€</strong></div> 
+  </div>
+  <div class="product-grid">
+  <div class="product-card">
+    <div style="position: relative;">
+      <img src="image/f2.png" alt="Coque iPhone transparent"></div>
+    <div class="product-title">Anti-casse samsung  </div>
+    <div class="product-price"> <strong> 10€</strong></div>
+  </div>
+    </div>
+<div class="product-grid">
+  <div class="product-card">
+    <div style="position: relative;">
+      <img src="image/f3.png" alt="Coque iPhone transparent"></div>
+    <div class="product-title">Anti-casse Tablette </div>
+    <div class="product-price"> <strong> 10€</strong></div> 
+  </div>
+  </div>
+  <div class="product-grid">
+  <div class="product-card">
+    <div style="position: relative;">
+      <img src="image/f4.png" alt="Coque iPhone transparent"></div>
+    <div class="product-title">Anti-casse Ximi </div>
+    <div class="product-price"> <strong> 10€</strong></div>
+  </div>
+  </div> 
+<script>
+    window.addEventListener('scroll', function(){
+        const header=document.querySelector('header');
+        header.classList.toggle("sticky",window.scrollY>0);
+    });
+    function boutiqueMenu(){
+        const boutiqueMenu = document.querySelector('boutiqueMenu');
+        const navbar = document.querySelector('.navbar');
+        boutiqueMenu.classList.boutique('active');
+        navbar.classList.boutique('active');
+    }
+</script>
+</body>
+</html>
